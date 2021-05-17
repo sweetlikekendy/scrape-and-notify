@@ -1,15 +1,21 @@
 # Scrape and Notify
 
-https://www.youtube.com/watch?v=1d1YSYzuRzU&t=1s
+Scrape a website and notify you when a change has occured.
 
-https://github.com/tombaranowicz/AmazonPricesMonitoring/blob/master/index.js
+## How To Use
 
-https://www.youtube.com/watch?v=-rcRf7yswfM
+1. Clone repository to your local drive.
+2. Inside directory run `npm install` or `yarn install`.
+3. Add the Best Buy item url you want to scrape in `index.js` in the `bestBuyUrl` variable.
 
-# For best buy use user agent
+   a. Adjust the script to track price or something else.
 
-https://www.freecodecamp.org/news/create-api-website-using-puppeteer/
+4. Run the script `npm run develop` or `yarn develop`.
 
-https://nitayneeman.com/posts/getting-to-know-puppeteer-using-practical-examples/
+# Resources Used
 
-To be continued ...
+- Puppeteer and nodemailer [resource](https://www.youtube.com/watch?v=1d1YSYzuRzU&t=1s)
+
+  - [Github repo](https://github.com/tombaranowicz/AmazonPricesMonitoring/blob/master/index.js)
+
+- [Gmail OAuth 2.0](https://www.youtube.com/watch?v=-rcRf7yswfM)

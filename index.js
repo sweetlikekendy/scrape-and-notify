@@ -33,7 +33,10 @@ const fetchUrl = async (url) => {
           ? $(`button.add-to-cart-button`).get(0).children[1].data
           : $(`button.add-to-cart-button`).get(0).children[0].data
       const lowercaseItemAvailability = itemAvailability.toLowerCase()
-      const isInStock = lowercaseItemAvailability === `sold out` ? false : true
+      const isInStock =
+        lowercaseItemAvailability === (`sold out` || `unavailable nearby`)
+          ? false
+          : true
 
       item = {
         title,
